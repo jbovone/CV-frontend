@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    font-size: 20px;
+    margin: 20px 0px;
+    span {
+        color: $myRed;
+    }
+    ol {
+        width: 50%;
+        img {
+            transform: translateX(120%) scale(1.7);
+            margin: 30px;
+        }
+    }
+    li {
+        margin: 5px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 450px;
+        min-width: 170px;
+
+        div {
+            display: flex;
+        }
+        img {
+            width: 10px;
+        }
+    }
+    .about {
+        width: 50%;
+
+        img {
+            margin: 30px;
+            width: 90px;
+        }
+        p {
+            font-size: 15px;
+            color: $myLightBlue;
+            margin: 0px 10px 10px 10px;
+        }
+    }
+}

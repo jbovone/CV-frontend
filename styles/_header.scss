@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18vh;
+    background-image: url("../assets/visor.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    figure {
+        text-align: center;
+    }
+    figcaption {
+        margin: 0px 20px;
+        color: $myGray;
+        font-family: "Roboto Slab", serif;
+    }
+    img {
+        height: 50px;
+    }
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact > * {
+    color: $myRed;
+}

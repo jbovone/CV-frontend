@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100&display=swap&family=Roboto+Slab:wght@300&display=swap'");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 18vh;
+  background-image: url("../assets/visor.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.hero figure {
+  text-align: center;
+}
+
+.hero figcaption {
+  margin: 0px 20px;
+  color: #dedede;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero img {
+  height: 50px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact > * {
+  color: #c97676;
+}
+
+footer {
+  position: relative;
+  overflow-x: hidden;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  image-resolution: cover;
+  background-image: url("../assets/eirye-bar.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 70%;
+}
+
+footer ol {
+  position: absolute;
+  right: 1.5%;
+  top: 10px;
+  list-style: none;
+}
+
+footer ol li {
+  color: #dedede;
+  font-style: italic;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+footer .brown {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  background-color: #746349;
+  height: 130px;
+  z-index: 0;
+}
+
+footer img {
+  width: 90%;
+  z-index: 1;
+}
+
+.skill {
+  height: 30px;
+  width: 30px;
+}
+
+.inactive {
+  background-image: url("../assets/star-inactive.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.active {
+  background-image: url("../assets/star-active.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+main span {
+  color: #c97676;
+}
+
+main ol {
+  width: 50%;
+}
+
+main ol img {
+  -webkit-transform: translateX(120%) scale(1.7);
+          transform: translateX(120%) scale(1.7);
+  margin: 30px;
+}
+
+main li {
+  margin: 5px 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 450px;
+  min-width: 170px;
+}
+
+main li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main li img {
+  width: 10px;
+}
+
+main .about {
+  width: 50%;
+}
+
+main .about img {
+  margin: 30px;
+  width: 90px;
+}
+
+main .about p {
+  font-size: 15px;
+  color: #5eb3ce;
+  margin: 0px 10px 10px 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  color: #e7deff;
+}
+
+*::before {
+  margin: 0px;
+  padding: 0px;
+}
+
+*::after {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292929;
+}
+
+h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #dedede;
+}
+
+.line-separator {
+  width: 90%;
+  max-height: 50px;
+}
+
+.top {
+  width: 90%;
+  max-height: 50px;
+  margin-top: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1280px;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+body > * {
+  width: 85%;
+}
+
+@media screen and (max-width: 1230px) {
+  footer ol li {
+    font-size: 1.4vw;
+  }
+  header {
+    background-image: unset;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .contact {
+    font-size: 0.8em;
+  }
+  header .hero {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main ol,
+  main .about,
+  main li {
+    min-width: unset;
+    max-width: unset;
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .values-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .brown {
+    height: 45px;
+  }
+  .profs-title {
+    margin: 10px;
+    -webkit-transform: translateX(40%) scale(1.7);
+            transform: translateX(40%) scale(1.7);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .contact {
+    margin: 25px;
+  }
+  figure {
+    margin-top: 5px;
+  }
+  figure img {
+    width: 30px;
+  }
+  figure figcaption {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main li {
+    font-size: 0.8em;
+  }
+  .skill {
+    height: 20px;
+    width: 20px;
+  }
+  footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
