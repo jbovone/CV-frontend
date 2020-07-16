@@ -26,6 +26,7 @@ for (let i = 0; i < technologies.length; i++) {
     
     const $tagName = document.createElement('div')
     $tagName.textContent =  technologies[i]
+    $tagName.className = 'tag-name'
     $skillsContainer.appendChild($tagName)
     
 
