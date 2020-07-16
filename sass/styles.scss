@@ -70,8 +70,6 @@ body > * {
             margin-top: 15px;
         }
     }
-}
-@media screen and (max-width: 735px) {
     main {
         flex-direction: column;
         align-items: center;
@@ -90,16 +88,8 @@ body > * {
         justify-self: right;
         justify-content: space-between;
     }
-    .profs-title {
-        display: block !important;
-        position: relative !important;
-        padding-top: 50px;
-        margin: unset;
-        align-self: baseline;
-        justify-self: baseline;
-        bottom: 0px;
-    }
 }
+
 @media screen and (max-width: 470px) {
     h1 {
         font-size: 1.5em;
@@ -123,5 +113,29 @@ body > * {
         transform: scale(0.8) translate(15%);
         right: 0;
         width: 420px;
+    }
+}
+@media screen and (max-width: 400px) {
+    header {
+        .line-separator {
+            transform: translate(-50%);
+            left: 50%;
+            width: 240px;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+    main {
+        .skill {
+            width: 20px;
+            height: 20px;
+        }
+        li {
+            font-size: 15px;
+        }
+        .tag-name::before {
+            display: none;
+        }
     }
 }
