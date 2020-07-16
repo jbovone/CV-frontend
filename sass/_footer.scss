@@ -1,0 +1,41 @@
+footer {
+    ol {
+        position: absolute;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-end;
+        justify-content: center;
+        right: 0px;
+        height: 15vh;
+        width: 80%;
+        background-image: url("../assets/eirye-bar.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        list-style: none;
+        z-index: -1;
+
+        li {
+            color: $myGray;
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 5px;
+        }
+    }
+    .bar {
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        right: 0;
+        bottom: 10%;
+        background-color: $vibrantPrimary;
+        z-index: -1;
+    }
+    img {
+        width: 100%;
+    }
+    z-index: 1;
+    padding-bottom: 20px;
+}

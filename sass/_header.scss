@@ -1,15 +1,14 @@
 header {
+    margin: 40px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 18vh;
-    background-image: url("../assets/visor.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 }
 .hero {
+    position: relative;
     display: flex;
+    padding: 50px 0;
     flex-direction: row-reverse;
     figure {
         text-align: center;
@@ -23,9 +22,15 @@ header {
         height: 50px;
     }
 }
+.line-separator {
+    position: absolute;
+    width: 400px;
+    bottom: 0px;
+}
 .contact {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 .contact > * {
     color: $myRed;

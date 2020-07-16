@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100&display=swap&family=Roboto+Slab:wght@300&display=swap'");
-$myRed: #c97676;
-$myViolet: #9a88c0;
-$myLightViolet: #e7deff;
+$vibrantPrimary: #c92cb8;
+$primary: #9a88c0;
+$lightPrimary: #e7deff;
+$myRed: #be4b4b;
 $myLightBlue: #5eb3ce;
-$myBrown: #746349;
 $myGray: #dedede;
 @import "header", "footer", "skillers", "main";
 * {
@@ -20,9 +20,8 @@ $myGray: #dedede;
         margin: 0px;
         padding: 0px;
     }
-    color: $myLightViolet;
+    color: $lightPrimary;
 }
-
 html {
     display: flex;
     flex-direction: column;
@@ -33,41 +32,39 @@ h1 {
     align-self: center;
     color: $myGray;
 }
-.line-separator {
-    width: 90%;
-    max-height: 50px;
-}
-.top {
-    width: 90%;
-    max-height: 50px;
-    margin-top: 10px;
-}
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1280px;
-    width: 100vw;
     overflow-x: hidden;
     background-color: black;
+    max-width: 1024px;
+    width: 100vw;
 }
 body > * {
     width: 85%;
 }
-@media screen and (max-width: 1230px) {
-    footer ol li {
-        font-size: 1.4vw;
-    }
-    header {
-        background-image: unset;
+@media screen and (max-width: 1080px) {
+    footer {
+        .bar {
+            bottom: 15vw;
+        }
+        ol {
+            bottom: 30vw;
+            li {
+                font-size: 1.4vw;
+            }
+        }
     }
 }
 @media screen and (max-width: 840px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
         .contact {
             font-size: 0.8em;
+            margin: 20px;
+            align-self: flex-start;
         }
         .hero {
             margin-top: 15px;
@@ -78,6 +75,7 @@ body > * {
     main {
         flex-direction: column;
         align-items: center;
+        margin-top: 60px;
     }
     main ol,
     main .about,
@@ -89,14 +87,17 @@ body > * {
     }
     .values-container {
         display: flex;
-        justify-content: space-around;
-    }
-    footer .brown {
-        height: 45px;
+        justify-self: right;
+        justify-content: space-between;
     }
     .profs-title {
-        margin: 10px;
-        transform: translateX(40%) scale(1.7);
+        display: block !important;
+        position: relative !important;
+        padding-top: 50px;
+        margin: unset;
+        align-self: baseline;
+        justify-self: baseline;
+        bottom: 0px;
     }
 }
 @media screen and (max-width: 470px) {
@@ -115,16 +116,12 @@ body > * {
             font-size: 0.8em;
         }
     }
-}
-@media screen and (max-width: 360px) {
-    main li {
-        font-size: 0.8em;
-    }
-    .skill {
-        height: 20px;
-        width: 20px;
-    }
-    footer {
+    footer ol {
         display: none;
+    }
+    .line-separator {
+        transform: scale(0.8) translate(15%);
+        right: 0;
+        width: 420px;
     }
 }

@@ -8,7 +8,7 @@ const proficiencies = {
     "jQuery":3, 
     "Node":3,
     "MongoDB":3,
-    "Npm":2,
+    "Npm":3,
     "Figma":3,
     "React":2,
     "HandleBars":4,
