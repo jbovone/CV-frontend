@@ -4,19 +4,20 @@ const proficiencies = {
   Html: 4,
   JavaScript: 4,
   Sass: 4,
-  Git: 3,
+  "Material-ui": 4,
   Bootstrap: 3,
+  Materialize: 3,
   jQuery: 3,
   Node: 3,
   MongoDB: 3,
   Npm: 3,
+  Git: 3,
   Figma: 3,
   HandleBars: 4,
   Webpack: 3,
-  Cypress: 2,
+  Cypress: 3,
   Jest: 1,
   PWA: 1,
-  Materialize: 1,
 };
 const technologies = Object.keys(proficiencies);
 for (let i = 0; i < technologies.length; i++) {
